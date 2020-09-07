@@ -1,0 +1,95 @@
+
+{
+  "products": [
+    {
+      "image": "bag_5",
+      "name": "Carrier",
+      "description": "All purpose messenger bag",
+      "colors": [
+        "#BED3F3",
+        "#412b02"
+      ],
+      "size":
+        {
+          "height": 10,
+          "width": 10,
+          "depth": 10
+        }
+      ,
+      "price": 220,
+      "quantity": 5
+    },
+    {
+      "image": "bag_4",
+      "name" : "PickleBall",
+      "description": "Over the shoulder bag",
+      "colors": [
+        "#d5fd1f",
+        "#8d5c69"
+      ],
+      "size":
+        {
+          "height": 10,
+          "width": 10,
+          "depth": 10
+        }
+      ,
+      "price": 120,
+      "quantity": 4
+    },
+    {
+      "image": "bag_3",
+      "name" : "Travol",
+      "description": "Bag for weekend getaway",
+      "colors": [
+        "#652bc7",
+        "#70ce12"
+      ],
+      "size":
+        {
+          "height": 10,
+          "width": 10,
+          "depth": 10
+        }
+      ,
+      "price": 200,
+      "quantity": 3
+    },
+    {
+      "image": "bag_2",
+      "name" : "Urbanito",
+      "description": "Bag for your daily commute",
+      "colors": [
+        "#283514"
+      ],
+      "size":
+        {
+          "height": 10,
+          "width": 10,
+          "depth": 10
+        }
+      ,
+      "price": 300,
+      "quantity": 0
+    },
+    {
+      "image": "bag_1",
+      "name" : "School Backpack",
+      "description": "University bag",
+      "colors": [
+        "#283514",
+        "#48d9b1"
+      ],
+      "size":
+        {
+          "height": 10,
+          "width": 10,
+          "depth": 10
+        }
+      ,
+      "price": 100,
+      "quantity": 2
+    }
+  ]
+}
+
