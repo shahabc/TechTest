@@ -18,7 +18,7 @@ class ColorsView: UIView {
         super.init(frame: frame)
         
         let flowLayout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
-        flowLayout.itemSize = CGSize(width: 60, height: 60)
+        flowLayout.itemSize = CGSize(width: 50, height: 50)
         flowLayout.scrollDirection = .horizontal
         
         // Setup Collection View
@@ -34,7 +34,7 @@ class ColorsView: UIView {
             self.collectionView.topAnchor.constraint(equalTo: self.topAnchor),
             self.collectionView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
             self.collectionView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
-            self.collectionView.heightAnchor.constraint(equalToConstant: 60)
+            self.collectionView.heightAnchor.constraint(equalToConstant: 50)
         ])
         
         self.collectionView.delegate = self

@@ -46,15 +46,13 @@ class ProductCardView: UIView {
     
     private func setupView() {
         
-        
         // Setup Price
         let priceStackView = UIStackView()
         priceStackView.addArrangedSubview(self.priceLabel)
         priceStackView.addArrangedSubview(self.freeShippingLabel)
         priceStackView.axis = .horizontal
         priceStackView.distribution = .fillProportionally
-        
-        
+        priceStackView.alignment = .center
         
         self.addSubview(priceStackView)
         priceStackView.translatesAutoresizingMaskIntoConstraints = false
@@ -77,7 +75,7 @@ class ProductCardView: UIView {
         
         NSLayoutConstraint.activate([
             self.descriptionLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20),
-            self.descriptionLabel.topAnchor.constraint(equalTo: priceStackView.bottomAnchor, constant: 15),
+            self.descriptionLabel.topAnchor.constraint(equalTo: priceStackView.bottomAnchor, constant: 10),
             self.descriptionLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -20)
         ])
         
@@ -87,6 +85,7 @@ class ProductCardView: UIView {
         sizeStackView.alignment = .top
         sizeStackView.distribution = .fillProportionally
         sizeStackView.spacing = 15
+
         
         let dimensionStackView = UIStackView()
         dimensionStackView.addArrangedSubview(self.heightLabel)
@@ -126,13 +125,17 @@ class ProductCardView: UIView {
         colorStackView.addArrangedSubview(colorLabel)
         colorStackView.addArrangedSubview(self.colorCollection)
         
+        self.colorCollection.translatesAutoresizingMaskIntoConstraints = false
+        
         self.addSubview(colorStackView)
         colorStackView.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
             colorStackView.topAnchor.constraint(equalTo: sizeStackView.bottomAnchor, constant: 20),
             colorStackView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20),
-            colorStackView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -20)
+            colorStackView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -20),
+            colorStackView.bottomAnchor.constraint(lessThanOrEqualTo: self.bottomAnchor, constant: -20),
+            self.colorCollection.heightAnchor.constraint(equalToConstant: 50)
         ])
         
     }
